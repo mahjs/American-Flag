@@ -1,0 +1,35 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+td,
+tr {
+  background-color: #fff;
+  color: #fff;
+  margin: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-spacing: 0px;
+}
+table {
+  border-spacing: 0;
+  padding: 0;
+  border: 0;
+}
+tr:nth-of-type(2n + 1) td {
+  background-color: red;
+  color: red;
+}
+tr:nth-last-of-type(n + 8) td:nth-last-of-type(n + 12) {
+  background-color: #00f;
+  color: #00f;
+}
+tr:nth-last-of-type(n + 8) td:nth-last-of-type(n + 12):before {
+  content: "\002A";
+  color: #fff;
+}
+tr:nth-last-of-type(2n + 8) td:before {
+  position: relative;
+  left: 10px;
+}
